@@ -13,16 +13,10 @@
 
     <nav class="nav-section">
        
-        <div class="nav-icon">
-      <a href=""><img src="car-logo2.png"></a>
-        </div>
-     <div class="menu-icon">
-           
-               <img src="menu.png">
-                   
-        </div>
- 
- <div>
+      
+      <a href=""><img src="car-logo2.png" class="nav-icon"></a>
+     
+    <div>
      <ul class="nav-list">
         <li class="nav-item">
             <a href="" class="nav-link">Used Cars</a></li>
@@ -41,11 +35,16 @@
                 person
                 </span>Sign Up</a></li>
      </ul>
- </div> 
+     <!-- <div class="menu-icon"> -->
+           
+              
+                </div>   
+        <!-- </div> --> <img src="menu.png" class="menu-icon">
+
    
     </nav>
     
-    <section class="main-section">
+    <!-- <section class="main-section">
         
         <div class="text">
             <h3>Say hello to your next<br>awesome vehicle</h3>
@@ -53,6 +52,16 @@
                 &SUVs for Sale
             </p>
         </div>
-    </section>
+    </section> -->
+
+    <script>
+
+        const menuBtn = document.querySelector(".menu-icon")
+        const navList = document.querySelector(".nav-list")
+
+        menuBtn.addEventListener("click",()=>{
+            navList.classList.toggle("mobile-menu")
+        })
+    </script>
 </body>
 </html>
