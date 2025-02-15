@@ -61,8 +61,17 @@ nav{
       background-color: rgb(236, 236, 236);
       margin-right: 0.5vmax;
 }
+@media(max-width:300px){
+    .nav-list li a{
+        font-size: 3.4vw;
+    }
+}
 @media(max-width:500px){
      
+    .nav-list li{
+        font-size: 2.2vw;
+       
+    }
    
 }
 @media(max-width:850px){
@@ -78,6 +87,7 @@ nav{
   .nav-list{
         flex-direction: column;
         position:relative;
+        font-size: 1.8vw;
          width:67em;
         height: fit-content;
         left: -1vmax;
