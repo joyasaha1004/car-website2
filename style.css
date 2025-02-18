@@ -60,7 +60,7 @@ nav{
       margin-right: 0.5vmax;
 }
 section{
-    background-image: url('./Assets/background.jpg');
+    background-image: url('Assets/background.jpg');
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
