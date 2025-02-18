@@ -156,12 +156,20 @@ section{
     top:0.4vmax;
    
 }
+@media(max-width:350px){
+    .text h3{
+        font-size: 9vw !important;
+    }
+}
 @media(max-width:400px){
     .nav-list li a{
         font-size: 2.8vw;
     }
+    .text h3{
+        font-size: 6vmax !important;
+    }
     .text p{
-        font-size: 2.8vw;
+        font-size:13px;
     }
     
 }
