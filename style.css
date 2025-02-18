@@ -59,8 +59,8 @@ nav{
       background-color: rgb(236, 236, 236);
       margin-right: 0.5vmax;
 }
-.main-section{
-    background-image: url('/menu.png');
+section{
+    background-image: url('/background.jpg');
     width: 100%;
     background-position: center;
     background-repeat: no-repeat;
