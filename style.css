@@ -99,9 +99,6 @@ section{
    display: flex;
   flex-wrap: wrap;
    gap: 2vmax; 
-   /* z-index: 20; */
-   /* left: 17vmax;
-   right: 0;  */
    justify-self: center;
    top:14vmax;
    padding-right: 1vmax;
@@ -156,27 +153,32 @@ section{
     top:0.4vmax;
    
 }
-@media(max-width:350px){
-    .text h3{
-        font-size: 9vw !important;
+@media(max-width:300px){
+   
+    section{
+        height: 43vmax;
     }
+   
+    .text p{
+        font-size: 12px;
+    }
+
 }
+
 @media(max-width:400px){
     .nav-list li a{
         font-size: 2.8vw;
     }
     .text h3{
-        font-size: 5.5vmax !important;
+        font-size: 5.3vmax !important;
     }
     .text p{
-        font-size:13px;
+        font-size:2.2vmax;
     }
     
 }
 @media(max-width:480px){
-    select{
-        max-width: 80%;
-    }
+   
     .select-option{
         gap: 3.2vmax !important;
     }
@@ -196,7 +198,42 @@ section{
     left: 0;
     right: 0;
     }
-   
+    .select-option{
+        display: grid;
+        width: 92%;
+        margin: -4vmax  1.8vmax !important;
+        gap: 6vmax !important;
+        padding: 4.2vmax 2.3vw;
+       
+    }
+    .option{
+         border: none;
+    }
+   select{
+       font-size: 20px;
+       position: relative;
+       width: 100%;
+       height: 4vmax;
+       font-weight: 600 !important;
+   }
+   .form-select{
+       font-size: 2vmax;
+   }
+   .select-option h5{
+       font-size: 1.9vmax;
+   }
+   .btn{
+       
+       text-align: center;
+     
+   }
+   .btn button{
+   padding: 1.5vmax 19.85vmax;
+     position: relative;
+     justify-content: left; 
+      font-size: 1.9vmax;
+   } 
+
 }
 
 @media(max-width:850px){
