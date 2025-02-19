@@ -228,7 +228,7 @@ section{
      
    }
    .btn button{
-   padding: 1.5vmax 19.85vmax;
+   padding: 1.5vmax 19.85vw;
      position: relative;
      justify-content: left; 
       font-size: 1.9vmax;
