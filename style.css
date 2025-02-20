@@ -178,7 +178,7 @@ section{
         font-size: 12px;
     }
  .main-section{
-     margin-bottom: 86vmax !important;
+     margin-bottom: 90vmax !important;
  }
 }
 
@@ -224,10 +224,12 @@ section{
        
     }
     section{
-         margin-bottom: 74vmax !important;
+         margin-bottom: 86vmax !important;
     }
     .option{
-         border: none;
+        border-right: none;
+         border-bottom: 1px solid rgb(235, 235, 235);
+         padding-bottom: 10px;
     }
    select{
        font-size: 20px;
