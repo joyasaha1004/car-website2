@@ -256,7 +256,7 @@ section{
       font-size: 1.9vmax;
    }
   .brand-logo img{
-    width: 7vmax;
+    width: 9vmax !important;
   }
 }
 
