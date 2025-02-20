@@ -153,16 +153,33 @@ section{
     top:0.4vmax;
    
 }
+/* .brand-logo{
+     width: 100%;
+    position: relative;
+    top: 9vmax;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5vmax;
+}
+ .brand-logo img{
+  width: 6vmax;
+  
+} */
+
 @media(max-width:300px){
    
     section{
-        height: 43vmax;
+        height: 43vmax; 
+      
     }
    
     .text p{
         font-size: 12px;
     }
-
+ .main-section{
+     margin-bottom: 86vmax !important;
+ }
 }
 
 @media(max-width:400px){
@@ -206,6 +223,9 @@ section{
         padding: 4.2vmax 2.3vw;
        
     }
+    section{
+         margin-bottom: 74vmax !important;
+    }
     .option{
          border: none;
     }
@@ -216,6 +236,7 @@ section{
        height: 4vmax;
        background: white;
        font-weight: 600 !important;
+      
    }
    .form-select{
        font-size: 2vmax;
@@ -233,8 +254,10 @@ section{
      position: relative;
      justify-content: left; 
       font-size: 1.9vmax;
-   } 
-
+   }
+  .brand-logo img{
+    width: 7vmax;
+  }
 }
 
 @media(max-width:850px){
@@ -317,10 +340,25 @@ section{
    .nav-icon{
     width:7vmax;
 }
+section{
+    margin-bottom: 9vmax;
+}
 .sign-btn span{
      font-size: 1.5vmax; 
       padding: 0.5vmax;
 }
+.brand-logo{
+   
+    gap: 6vmax;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.brand-logo img{
+    width: 6vmax;
+    
+  }
 }
 /* nav{
     position: relative;
