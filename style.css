@@ -166,6 +166,49 @@ section{
   width: 6vmax;
   
 } */
+/* .trending{
+    margin-top: 10vmax;
+    padding: 0 2.5vmax;
+}
+.trending h3{
+    position: relative;
+    font-size: 3vmax;
+    justify-self: center;
+}
+
+.car-details{
+    padding: 0.9vmax ;
+}
+.row h6{
+    margin-top: 0.8vmax; 
+    font-size: 1.5vmax;
+    font-weight: 700;
+    margin-bottom: 0.7vmax;
+}
+.row p{
+    font-size: 1.2vmax;
+    color: gray;
+}
+.second-para{
+    margin-top: 0.5vmax;
+}
+.btns{
+    gap: 0.5vmax;
+}
+.btns button{
+    font-size: 1.5vmax;
+    margin-top: 2vmax;
+    padding: 0.6vmax 1vmax ;
+    border-radius: 15px;
+    border: none;
+}
+.btn1{
+    background: rgb(223, 247, 255);
+    color: rgb(117, 212, 250);
+}
+.btn2{
+    color: gray;
+} */
 
 @media(max-width:300px){
    
@@ -361,6 +404,67 @@ section{
     width: 6vmax;
     
   }
+  .row{
+      gap: 3.5vmax;
+      align-items: center;
+      justify-content: center;
+      margin:7vmax -1vmax;
+      /* margin-top: 7.5vmax; */
+      display: flex;
+   flex-wrap: wrap;
+  }
+  .row img{
+      width: 29vmax;
+      height: 18vmax;
+      border-radius: 0.5vmax;
+  }
+  .brand-logo{
+    margin-bottom: 10vmax;
+    /* padding: 0 2.5vmax; */
+}
+.trending h3{
+    position: relative;
+    font-size: 3vmax;
+    justify-self: center;
+}
+
+.car-details{
+    padding: 0.9vmax ;
+}
+.row h6{
+    /* margin-top: 0.8vmax; */
+    font-size: 1.5vmax;
+    font-weight: 700;
+    margin-bottom: 0.7vmax;
+}
+.row p,span{
+    position: relative;
+    font-size: 1.2vmax;
+    color: gray;
+}
+.row p{
+    margin-bottom: 0.5vmax;
+    
+}
+.btns{
+    gap: 0.5vmax;
+}
+.btns button{
+    font-size: 1.4vmax;
+    margin-top: 2vmax;
+    padding: 0.6vmax 1vmax ;
+    border-radius: 0.5vmax;
+    border: none;
+    cursor: pointer;
+}
+.btn1{
+    background: rgb(223, 247, 255);
+    color: rgb(117, 212, 250);
+}
+.btn2{
+    color: gray;
+}
+
 }
 /* nav{
     position: relative;
@@ -424,7 +528,11 @@ background: white;
      color: white;
      position: relative;
      padding-top: 14vw;
-     padding-bottom: 15vw;
+     padd.row img{
+    width:750px;
+    height: 500px;
+    border-radius: 20px;
+}ing-bottom: 15vw;
 }
 .text h3{
     font-size: 6vw;
