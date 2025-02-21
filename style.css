@@ -378,6 +378,7 @@ section{
 }
 
 @media(max-width:2500px){
+
     .nav-list{
         font-size:1.5vw ; 
          right: 3em;
@@ -387,6 +388,9 @@ section{
 }
 section{
     margin-bottom: 9vmax;
+}
+.text{
+    padding: 0 1vmax;
 }
 .sign-btn span{
      font-size: 1.5vmax; 
