@@ -185,9 +185,13 @@ section{
      margin-bottom: 83vmax !important;
  }
  .section-action{
-     padding: 1vmax  !important;
+     padding: 1vmax 0.5vmax !important;
      flex-wrap: wrap;
      gap: 1.5vmax;
+ }
+ .section-product{
+     padding: 0 1.2vmax !important;
+     gap: 2vmax !important;
  }
 }
 @media(max-width:350px){
@@ -448,7 +452,7 @@ section{
     color: rgb(117, 212, 250);
 }
  .section-action{
-    padding: 1vmax 3vmax;
+    padding: 1vmax 2vmax;
     /* display: flex;
     justify-content: space-between; */
     margin-bottom: 8vmax;
