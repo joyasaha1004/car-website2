@@ -164,8 +164,67 @@
         </div>    
     </div>
 </div>
+    </div>
 
-    
+    <!-- car model -->
+
+    <div class="section-action">
+        <div class="items">
+            <h3>Find car by model</h3>
+            
+        </div>
+        <div class="arrows">
+            <p>1/6</p>
+         <img src="left-arrow.png" class="left-arrow-img">
+         <img src="right-arrow.png" class="right-arrow-img">
+           </div>
+        </div>
+    </div>
+    <div class="section-product ">
+        <div class="product active-btn">
+            <img src="car1.jpg">
+            <p>Sedan</p>
+            <button class="">23,457 vehicles</button>
+        </div>
+        <div class="product ">
+            <img src="car3.jpg" >
+            <p class="">Sedan</p>
+            <button class="">23,457 vehicles</button>
+        </div>
+
+<div class="product">
+            <img src="car1.jpg">
+            <p class="">Sedan</p>
+            <button class="">23,457 vehicles</button>
+        </div>
+        <div class="product">
+            <img src="car4.jpg">
+            <p >Sedan</p>
+            <button class="">23,457 vehicles</button>
+        </div>
+        <div class="product ">
+
+        </div>
+        <div class="product">
+            <img src="car3.jpg">
+            <p class="">Sedan</p>
+            <button class="">23,457 vehicles</button>
+        </div>
+        <div class="product ">
+            <img src="car4.jpg">
+            <p>Sedan</p>
+            <button class="">23,457 vehicles</button>
+        </div>
+        <div class="product">
+            <img src="car1.jpg">
+            <p>Sedan</p>
+            <button class="">23,457 vehicles</button>
+        </div>
+        <div class="product">
+            <img src="car4.jpg">
+            <p class="">Sedan</p>
+            <button class="">23,457 vehicles</button>
+        </div>
     </div>
     <script>
 
@@ -175,6 +234,64 @@
         menuBtn.addEventListener("click",()=>{
             navList.classList.toggle("mobile-menu")
         })
+        document.addEventListener("DOMContentLoaded", () => {
+    const productContainer = document.querySelector(".section-product");
+    const products = document.querySelectorAll(".product");
+    const leftArrow = document.querySelector(".left-arrow-img");
+    const rightArrow = document.querySelector(".right-arrow-img");
+
+    let currentIndex = 0;
+    const totalItems = products.length;
+    const itemWidth = products[0].offsetWidth + 10; // Image width + margin
+
+    // Clone first and last elements for infinite effect
+    const firstClone = products[0].cloneNode(true);
+    const lastClone = products[totalItems - 1].cloneNode(true);
+    
+    productContainer.appendChild(firstClone); // Add to end
+    productContainer.insertBefore(lastClone, products[0]); // Add to start
+
+    let adjustedIndex = 1; // Since we added one item at the beginning
+    productContainer.style.transform = `translateX(${-adjustedIndex * itemWidth}px)`;
+
+    function updateSlider() {
+        productContainer.style.transition = "transform 0.5s ease-in-out";
+        productContainer.style.transform = `translateX(${-adjustedIndex * itemWidth}px)`;
+    }
+
+    rightArrow.addEventListener("click", () => {
+        if (adjustedIndex >= totalItems) {
+            productContainer.style.transition = "none"; // Disable transition for instant jump
+            adjustedIndex = 0; // Jump to real first image
+            productContainer.style.transform = `translateX(${-adjustedIndex * itemWidth}px)`;
+            setTimeout(() => {
+                adjustedIndex++;
+                updateSlider();
+            }, 50);
+        } else {
+            adjustedIndex++;
+            updateSlider();
+        }
+    });
+
+    leftArrow.addEventListener("click", () => {
+        if (adjustedIndex <= 0) {
+            productContainer.style.transition = "none"; // Disable transition for instant jump
+            adjustedIndex = totalItems; // Jump to real last image
+            productContainer.style.transform = `translateX(${-adjustedIndex * itemWidth}px)`;
+            setTimeout(() => {
+                adjustedIndex--;
+                updateSlider();
+            }, 50);
+        } else {
+            adjustedIndex--;
+            updateSlider();
+        }
+    });
+});
+
     </script>
+   
+
 </body>
 </html>
