@@ -254,7 +254,9 @@ footer ul li u{
     .text p{
         font-size:2.2vmax;
     }
-    
+    .container{
+        gap: 6vmax !important;
+    }
 }
 @media(max-width:480px){
    
@@ -333,9 +335,7 @@ footer ul li u{
   .first-row{
       gap: 16vmax !important;
   }
- .container{
-     gap: 10vmax !important;
- }
+ 
 }
 @media(max-width:600px){
      .brand-n{
@@ -648,7 +648,7 @@ footer{
     padding: 2.3vmax 2vmax;
 }
 .container{
-    gap: 4vmax;
+    gap: 8vmax;
     justify-content: center;
 }
 .start-row ul li,.second-row ul li,.third-row ul li,.four-row ul li{
