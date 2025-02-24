@@ -209,6 +209,15 @@ section{
    justify-self: end;
  }
 }
+@media(max-width:330px){
+
+   
+   .find-btns{
+  flex-wrap: wrap;
+     margin-left: auto;
+       
+   }
+}
 @media(max-width:350px){
     
     .row{
@@ -537,6 +546,7 @@ font-size: 1.5vmax;
 }
 .find-car{
     padding: 7vmax 2vmax;
+    gap: 2vmax;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -545,8 +555,7 @@ font-size: 1.5vmax;
  .find-btns{
      position: relative;
      display: flex;
-    align-items: center;
-    justify-content: center;
+   
     gap: 6vmax ;
 } 
 .btn{
