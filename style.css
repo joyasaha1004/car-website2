@@ -170,7 +170,13 @@ section{
 .items{
     display: flex;
 }
+.find-car{
+    display: flex;
+}
 
+.number{
+    color: gray;
+}
 @media(max-width:300px){
    
     section{
@@ -192,6 +198,15 @@ section{
  .section-product{
      padding: 0 1.2vmax !important;
      gap: 2vmax !important;
+ }
+ .find-car{
+     gap: 3vmax;
+     width: 100%;
+ }
+ .find-btns{
+    display: flex;
+    position: relative;
+   justify-self: end;
  }
 }
 @media(max-width:350px){
@@ -285,8 +300,23 @@ section{
   .brand-logo img{
     width: 9vmax !important;
   }
+  .find-btns{
+      gap: 3vmax !important;
+  }
+  .menu-section{
+      gap: 12vmax !important;
+  }
+  .first-row{
+      gap: 16vmax !important;
+  }
+ 
 }
-
+@media(max-width:600px){
+     .brand-n{
+      position: relative;
+     top: -0.8vmax !important;
+  }
+}
 @media(max-width:850px){
      
     .search-container {
@@ -395,7 +425,7 @@ section{
       align-items: center;
       justify-content: center;
       margin:7vmax -1vmax;
-      /* margin-top: 7.5vmax; */
+     
       display: flex;
    flex-wrap: wrap;
   }
@@ -406,7 +436,7 @@ section{
   }
   .brand-logo{
     margin-bottom: 10vmax;
-    /* padding: 0 2.5vmax; */
+   
 }
 .trending h3{
     position: relative;
@@ -418,7 +448,7 @@ section{
     padding: 0.9vmax ;
 }
 .row h6{
-    /* margin-top: 0.8vmax; */
+   
     font-size: 1.5vmax;
     font-weight: 700;
     margin-bottom: 0.7vmax;
@@ -453,22 +483,18 @@ section{
 }
  .section-action{
     padding: 1vmax 2vmax;
-    /* display: flex;
-    justify-content: space-between; */
     margin-bottom: 8vmax;
   
 }
-/* .items{
-    display: flex;
-} */
-.items h3{
+
+.items h3,.find-car h3{
    font-size: 3vmax;
 } 
 .arrows p{
     font-size: 1.5vmax;
     padding: 0.7vmax 1vmax;
     color: gray;
-    /* background: rgb(235, 235, 235); */
+   
 }
 .arrows{
     color: black;
@@ -509,93 +535,85 @@ font-size: 1.5vmax;
     opacity: 1;
     transform: translateX(0);
 }
-}
-/* nav{
-    position: relative;
+.find-car{
+    padding: 7vmax 2vmax;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: fit-content;
+}
+ .find-btns{
+     position: relative;
+     display: flex;
     align-items: center;
-  justify-content: space-between;
- /* padding:0 25px ;  */
-  /* height:5vmax;
-background: white;
-   
-} */
-
-/* .nav-icon img{
-    margin-top: 1.5%;
-  
-}
-.nav-list{
-    position: relative;
-    display: flex;
-    list-style: none; 
-    font-weight: 600;
-    gap: 35px;
-}
- .nav-link{
-    text-decoration: none;
-    font-size: 1.5vw;
-     color: black;
+    justify-content: center;
+    gap: 6vmax ;
 } 
-.nav-item a{
+.btn{
+    font-size: 1.5vmax;
+    border: none;
+    background: transparent;
+}
+.text-black{
+    font-weight: 800;
+}
+.all-details{
+    padding: 0 2vmax;
+
+}
+.first-row{
+    display: flex;
+   font-size: 2.1vmax;
+    color:gray;
+    gap: 18.2vmax;
+}
+.brand{
+    gap: 1vmax;
+}
+
+.brand span{
+     font-size: 1.5vmax;
+     font-weight: 700;
+     color: black;
     white-space: nowrap;
 }
-.nav-icon,.menu-icon,.nav-list{
+.brand p{
+    font-size: 1.3vmax;
+    color: gray;
+  
+}
+.menu-section{
     position: relative;
+    padding: 4vmax 1vmax;
+  display: flex;
+    gap: 14.3vmax;
+    overflow-x: auto;
 }
-.menu-icon{
-    position: absolute;
-    right: 0;
-    top:10px;
-    visibility: hidden;
+.row-1{
+    padding-top: 2vmax;
+    gap: 2vmax;
 }
-
-
- 
-.sign-btn{
-      margin-top: -5px;
+.brand{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    /* padding-top: 2vmax;*/
+  padding-bottom: 7vmax; 
 }
-.nav-link span{
-     padding: 6px;
-     background-color: rgb(236, 236, 236);
-    margin-right: 12px; 
-}
-
-.main-section{
-    background-image: url(/Assets/background-car.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.text{
-    text-align: center;
-     color: white;
-     position: relative;
-     padding-top: 14vw;
-     padd.row img{
-    width:750px;
-    height: 500px;
-    border-radius: 20px;
-}ing-bottom: 15vw;
-}
-.text h3{
-    font-size: 6vw;
-}
-.text p{
-    font-size: 2vw;
-    font-weight: 600;
+.row-1 img{
+   width: 4vmax;
+   height: auto;
 }
 
-@media(max-width:270px){
-     .menu-icon img{
-       margin-left: -4.5vmin !important;
-    }
+.brand-info ul li{
+    list-style: none;
+  margin-bottom:1.2vmax ;
+    font-size: 1.5vmax;
+    font-weight: 700;
+    gap: 0.5vmax;
+}
+.number{
+    text-align: end;
 }
 
-@media(max-width:390px){
-    .menu-icon{
-     margin-left: -2vmin !important;
-    }
-   
-} */
-
+}
