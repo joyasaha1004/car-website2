@@ -665,6 +665,7 @@ footer{
 .start-row ul li,.second-row ul li,.third-row ul li,.four-row ul li{
    position: relative;
   margin-bottom: 1.5vmax;
+  cursor: pointer;
 } 
 .footer-section{
     gap: 2vmax;
