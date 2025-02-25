@@ -191,14 +191,24 @@ footer ul li{
 footer ul li u{
     color: gray;
 }
+.footer-section{
+  
+    display: flex; 
+}
+.link{
+    display: flex;
+    font-weight: 700;
+}
+.link span{
+      color: black;
+}
 @media(max-width:300px){
    
     section{
         height: 43vmax; 
       
     }
-   
-    .text p{
+   .text p{
         font-size: 12px;
     }
  .main-section{
@@ -655,10 +665,36 @@ footer{
    position: relative;
   margin-bottom: 1.5vmax;
 } 
+.footer-section{
+    gap: 2vmax;
+    justify-content:space-between;  
+    margin:  1vmax 1vmax;
+}
+.link span{
+    margin-right: 0.5vmax;
+}
 footer ul li h6{
     font-weight: 800;
     font-size: 1.1vmax;
     margin-bottom: 0.5vmax;
 }
+.svg{
+    display: flex;
+    font-size: 1.1vmax;
+    color: gray;
+  align-items: center;
+  justify-content: center;
+}
+ .svg svg{
+   width: 0.8vmax;
+ }
+.modes{
+    display: flex;
+    gap: 1vmax;
+}
+.modes svg{
+    width: 1.5vmax;
+}
+
 
 }
