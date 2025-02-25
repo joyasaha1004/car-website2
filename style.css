@@ -371,6 +371,7 @@ footer ul li u{
         position: absolute;
         z-index: 70;
     }
+   
   .nav-list{
         flex-direction: column;
         position:relative;
@@ -378,8 +379,8 @@ footer ul li u{
          width:67em;
         height: fit-content;
         left: -1vmax;
-        top: -100vmax;
-      padding:9vmax 0;
+        top: -110vmax;
+      padding:10vmax 0;
       align-items: center; 
      gap: 5vmax;
      transition: 0.5s ease; 
