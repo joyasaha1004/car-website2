@@ -1,5 +1,5 @@
 body,html{
- 
+   position: relative;
     overflow-x: hidden;
    
 }
@@ -9,7 +9,7 @@ body,html{
     padding: 0;
 }
 nav{
-    position: fixed;
+   position: fixed;
     z-index: 100;
     width: 100%;
     display: flex;
@@ -160,6 +160,9 @@ section{
     display: flex;
     justify-content: space-between;
 }
+.arrows img{
+     cursor: pointer;
+}
 .items{
     display: flex;
 }
@@ -197,6 +200,9 @@ footer ul li u{
 }
 @media(max-width:300px){
    
+    .nav-icon{
+        position: relative;
+    }
     section{
         height: 43vmax; 
       
@@ -361,13 +367,13 @@ footer ul li u{
         display:grid;
     }
   .nav-icon{
-        position: absolute;
+        
         z-index: 70;
     }
    
   .nav-list{
         flex-direction: column;
-        position:relative;
+        position:absolute;
        z-index: 50;
          width:67em;
         height: fit-content;
@@ -426,6 +432,7 @@ footer ul li u{
          right: 3em;
     }
    .nav-icon{
+  
     width:7vmax;
 }
 section{
@@ -536,7 +543,7 @@ section{
     height: 2.1vmax;
     padding: 0.6vmax ;
     background:rgb(235, 235, 235) ;
-    cursor: pointer;
+   
 }
 .section-product{
       display: flex;
