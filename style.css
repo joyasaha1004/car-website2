@@ -90,6 +90,7 @@ section{
  
 }
 .select-option{
+    width:100%;
      text-align: start;
     width: fit-content; 
    background-color: white;
@@ -98,6 +99,7 @@ section{
    border-radius: 0.5em;
    margin: 0 2vmax;
    display: flex;
+   align-items: center;
   flex-wrap: wrap;
    gap: 2vmax; 
    justify-self: center;
