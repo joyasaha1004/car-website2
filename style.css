@@ -91,7 +91,8 @@ section{
 }
 .card{
     width: 100%;
-    /* justify-items: center; */
+     display: flex;
+     justify-content: center;
 }
 .select-option{
     
@@ -103,10 +104,8 @@ section{
    border-radius: 0.5em;
    margin: 0 2vmax;
    display: flex;
-  justify-self: center;
-  /* flex-wrap: wrap; */
+  justify-content: center;
    gap: 2vmax; 
-  
    top:14vmax;
    padding-right: 1vmax;
    box-shadow: gray;
