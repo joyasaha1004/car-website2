@@ -104,7 +104,7 @@ section{
    border-radius: 0.5em;
    margin: 0 2vmax;
    display: flex;
-  justify-content: center;
+ 
    gap: 2vmax; 
    top:14vmax;
    padding-right: 1vmax;
@@ -296,12 +296,13 @@ footer ul li u{
     left: 0;
     right: 0;
     }
+   
     .select-option{
         display: grid;
-        width: 92%;
-        margin: -4vmax  1.8vmax !important;
+       width: 100% ;
+      margin: -4vmax  7.8vmax !important;
         gap: 6vmax !important;
-        padding: 4.2vmax 2.3vw;
+        padding: 6vmax 3vw !important; 
        
     }
     section{
