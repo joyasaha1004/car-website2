@@ -296,7 +296,9 @@ footer ul li u{
     left: 0;
     right: 0;
     }
-   
+   .card{
+     justify-content:flex-start;
+   }
     .select-option{
         display: grid;
        width: 100% ;
